@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Game Programmer Portfolio</title>
+    <style>
+        /* Modern Dark Theme Variables */
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --accent-color: #58a6ff;
+            --text-main: #c9d1d9;
+            --text-muted: #8b949e;
+            --border-color: #30363d;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        /* Header / Hero Section */
+        header {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        .bio {
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+            max-width: 600px;
+        }
+
+        .links a {
+            color: var(--text-main);
+            text-decoration: none;
+            margin-right: 1.5rem;
+            font-weight: bold;
+            border-bottom: 2px solid transparent;
+            transition: border 0.2s;
+        }
+
+        .links a:hover {
+            border-bottom: 2px solid var(--accent-color);
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: #fff;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Skills Pill Tags */
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .skill-tag {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-family: monospace;
+        }
+
+        /* Project Cards */
+        .project-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-title {
+            font-size: 1.3rem;
+            color: #fff;
+        }
+
+        .project-tech {
+            font-family: monospace;
+            font-size: 0.85rem;
+            color: var(--accent-color);
+        }
+
+        /* Media Placeholder (Replace with your layout or GIFs) */
+        .project-media {
+            width: 100%;
+            height: 350px;
+            background-color: #000;
+            border-radius: 6px;
+            margin: 1rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            overflow: hidden;
+        }
+
+        .project-media img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .project-description {
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .project-bullets {
+            margin-left: 1.2rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-main);
+        }
+
+        .project-bullets li {
+            margin-bottom: 0.3rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #21262d;
+            border: 1px solid var(--border-color);
+            color: var(--accent-color);
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: background-color 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #30363d;
+        }
+
+        footer {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-top: 5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border-color);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- HERO / HEADER -->
+        <header>
+            <h1>Your Name</h1>
+            <div class="subtitle">Gameplay & Systems Programmer</div>
+            <p class="bio">
+                Passionate about engineering responsive mechanics, performant AI systems, and clean code architecture. Experienced with C++, C#, Unreal Engine, and Unity.
+            </p>
+            <div class="links">
+                <a href="mailto:your.email@example.com">Email</a>
+                <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+                <a href="#" target="_blank">Resume (PDF)</a>
+            </div>
+        </header>
+
+        <!-- SKILLS SECTION -->
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <span class="skill-tag">C++</span>
+                <span class="skill-tag">C#</span>
+                <span class="skill-tag">Unreal Engine 5</span>
+                <span class="skill-tag">Unity</span>
+                <span class="skill-tag">Gameplay Programming</span>
+                <span class="skill-tag">AI (Behavior Trees)</span>
+                <span class="skill-tag">Git / Version Control</span>
+                <span class="skill-tag">HLSL / Shaders</span>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section>
+            <h2>Featured Projects</h2>
+
+            <!-- PROJECT 1 -->
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-title">Project Title One</div>
+                    <div class="project-tech">C++ / Unreal Engine 5</div>
+                </div>
+                <p class="project-description">A fast-paced, first-person action game focusing on modular movement systems and rigid-body physics interactions.</p>
+                
+                <!-- Project Image/GIF Placeholder -->
+                <div class="project-media">
+                    <!-- Replace the src below with your game gameplay GIF or screenshot -->
+                    <p style="padding: 1rem; text-align: center;">[Replace with link to your gameplay GIF or YouTube video embed]</p>
+                </div>
+
+                <ul class="project-bullets">
+                    <li>Engineered a custom physics-based grappling hook and wall-running system.</li>
+                    <li>Optimized enemy spawning using an object pooling system, improving frame rates by 15% during heavy combat.</li>
+                    <li>Developed decoupled UI systems using data assets and Event Dispatchers.</li>
+                </ul>
+                <a href="https://github.com/yourusername/your-repo" class="btn" target="_blank">View Code Repository</a>
+            </div>
+
+            <!-- PROJECT 2 -->
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-title">Project Title Two</div>
+                    <div class="project-tech">C# / Unity</div>
+                </div>
+                <p class="project-description">A tactical roguelike featuring procedural map generation and data-driven turn-based AI systems.</p>
+                
+                <div class="project-media">
+                    <p style="padding: 1rem; text-align: center;">[Replace with link to your gameplay GIF or YouTube video embed]</p>
+                </div>
+
+                <ul class="project-bullets">
+                    <li>Wrote a cellular-automata dungeon generator to create organic, fully connected cave layouts.</li>
+                    <li>Designed an extensible ability system using ScriptableObjects for designer-friendly item creation.</li>
+                    <li>Implemented a state-machine based enemy AI array for turn planning calculations.</li>
+                </ul>
+                <a href="https://github.com/yourusername/your-repo-2" class="btn" target="_blank">View Code Repository</a>
+            </div>
+
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Your Name. Built with pure HTML/CSS hosted on GitHub Pages.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
